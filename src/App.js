@@ -27,8 +27,12 @@ import {
 //-----------------------
 import "./App.css";
 
+//自定义hook
+import {useStateContext} from './contexts/ContextProvider'
+
 function App() {
-  let activeMenu = true;
+  const {activeMenu} = useStateContext();
+
   return (
     <div className="App">
       <div className="flex relative dark:bg-main-dark-bg">
