@@ -14,7 +14,7 @@ const Sidebar = () => {
 
   //移动端点击侧边栏后自动关闭侧边栏
   const handleCloseSideBar = ()=>{
-    if(activeMenu && screenSize<=900){
+    if(activeMenu!==undefined && screenSize<=900){
       setActiveMenu(false)
     }
   }
@@ -50,9 +50,7 @@ const Sidebar = () => {
                 type="button"
                 className="text-xl rounded-full p-3 hover:bg-light-gray mt-4
             block md:hidden"
-
             // 通过context来进行状态管理
-            
               onClick={()=>{handleCloseSideBar()}}>
                 <MdOutlineCancel />
               </button>
@@ -66,7 +64,7 @@ const Sidebar = () => {
                   <NavLink
                     to={`/${link.name}`}
                     key={link.name}
-                    onClick={handleCloseSideBar()}
+                    onClick={()=>handleCloseSideBar()}
                     className={({ isActive }) =>
                       isActive ? activeLink : normalLink
                     }
