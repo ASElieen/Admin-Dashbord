@@ -3091,6 +3091,11 @@ export const SparklineAreaData = [
 
 ];
 
+export const SparklineAreaDataEcharts = {
+  dataX:[1,2,3,4,5],
+  dataY:[2,6,8,5,10]
+}
+
 export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
@@ -3174,6 +3179,11 @@ export const stackedChartData = [
     { x: 'July', y: 159.9 },
   ],
 ];
+
+export const stackedChartDataEchats = {
+  dataX:['Jan','Feb','Mar','Apr','May','Jun','July'],
+  dataY:[111.1,127.3,143.4,159.9,159.9,159.9,159.9]
+}
 
 export const stackedCustomSeries = [
 
