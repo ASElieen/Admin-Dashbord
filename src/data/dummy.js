@@ -1481,6 +1481,7 @@ export const customersData = [
 
 ];
 
+
 export const employeesData = [
   {
     EmployeeID: 1,
@@ -3122,6 +3123,7 @@ export const lineCustomSeries = [
     type: 'Line' },
 
 ];
+
 
 export const pieChartData = [
   { x: 'Labour', y: 18, text: '18%' },
